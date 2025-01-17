@@ -1,0 +1,96 @@
+/*--------------------------------------------------------------
+  ## hero-area
+--------------------------------------------------------------*/
+
+.hero-area {
+  position: relative;
+  background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(#f4772b,1) 0%, rgba(4,0,4,1) 90% );
+  width: 100%;
+  padding-top: 90px;
+  padding-bottom: 0px;
+  @media only screen and (max-width: 991px) {
+    padding-top: 70px;
+    padding-bottom: 50px;
+  }
+  .hero-text {
+    position: relative;
+    padding-top: 80px;
+    @media only screen and (max-width: 991px) {
+      text-align: center;
+      padding-top: 0;
+    }
+    h1 {
+      color: $primary-color;
+      font-family: $font-family-outfit;
+      font-size: 70px;
+      line-height: 1.1;
+      font-style: normal;
+      font-weight: 700;
+      text-shadow: 
+      2px 2px 0px #000, 
+      -2px -2px 0px #000, 
+      2px -2px 0px #fff, 
+      -2px 2px 0px #000;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      margin-bottom: 20px;
+      @media only screen and (max-width: 1399px) {
+        font-size: 65px;
+      }
+      @media only screen and (max-width: 1199px) {
+        font-size: 57px;
+      }
+      @media only screen and (max-width: 991px) {
+        font-size: 50px;
+      }
+      @media only screen and (max-width: 767px) {
+        font-size: 42px;
+        margin-bottom: 15px;
+      }
+      @media only screen and (max-width: 482px) {
+        font-size: 35px;
+      }
+      span {
+        background: linear-gradient(87.65deg, $primary-color -8.44%, #badaf7 97.32%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        display: inline-block;
+        opacity: 0;
+        transform: translateY(-20px);
+        transition:
+          opacity 1s ease-in-out,
+          transform 1s ease-in-out;
+
+      }
+    }
+    p{
+      font-size: 16px;
+      color: #fff;
+      font-weight: 500;
+      margin-bottom: 30px;
+      @media only screen and (max-width: 767px) {
+        margin-bottom: 10px;
+
+      }
+    }
+  }
+
+  .hero-btn{
+    display: flex;
+    margin-left: -6px;
+    margin-right: -6px;
+    @media only screen and (max-width: 767px) {
+      flex-direction: column;
+    }
+    a{
+      margin-left: 6px;
+      margin-right: 6px;
+      box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.55);
+      
+      @media only screen and (max-width: 767px) {
+        margin-top: 20px;
+      }
+    }
+  }
+}
